@@ -25,6 +25,9 @@ class ViewController: UIViewController {
     
     @IBAction private func didTapClear(_ sender: UIButton) {
         resultLabel.text = ""
+        firstNumber = ""
+        secondNumber = ""
+        isFirstNumber = true
     }
     
     @IBAction private func didTapResult(_ sender: UIButton) {

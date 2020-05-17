@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		74432B59245EC417006A5267 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74432B57245EC417006A5267 /* Main.storyboard */; };
 		74432B5B245EC419006A5267 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74432B5A245EC419006A5267 /* Assets.xcassets */; };
 		74432B5E245EC419006A5267 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74432B5C245EC419006A5267 /* LaunchScreen.storyboard */; };
+		749186192471518B000EB0E3 /* Expression in Frameworks */ = {isa = PBXBuildFile; productRef = 749186182471518B000EB0E3 /* Expression */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				749186192471518B000EB0E3 /* Expression in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = Calculator;
+			packageProductDependencies = (
+				749186182471518B000EB0E3 /* Expression */,
+			);
 			productName = Calculator;
 			productReference = 74432B50245EC417006A5267 /* Calculator.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = 74432B47245EC417006A5267;
+			packageReferences = (
+				749186172471518A000EB0E3 /* XCRemoteSwiftPackageReference "Expression" */,
+			);
 			productRefGroup = 74432B51245EC417006A5267 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		749186172471518A000EB0E3 /* XCRemoteSwiftPackageReference "Expression" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nicklockwood/Expression.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.13.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		749186182471518B000EB0E3 /* Expression */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 749186172471518A000EB0E3 /* XCRemoteSwiftPackageReference "Expression" */;
+			productName = Expression;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 74432B48245EC417006A5267 /* Project object */;
 }
